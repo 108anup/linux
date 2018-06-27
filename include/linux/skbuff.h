@@ -822,6 +822,8 @@ struct sk_buff {
 		__u8		inner_ipproto;
 	};
 
+        struct Qdisc            *sch;
+
 	__u16			inner_transport_header;
 	__u16			inner_network_header;
 	__u16			inner_mac_header;
